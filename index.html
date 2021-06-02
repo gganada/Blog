@@ -8,33 +8,70 @@
 
 </head>
 <body>
-
     <div id="container">
-        <div id="menu" class="item">
-            <center>
-                <img src="Hamburger_icon.svg" id="menuIcon" />
-            </center>
+        <!-- 컨테이너-->
+        <div id="upContainer" onclick="clickBatang();">
+
+            <!-- 메뉴 버튼-->
+            <div id="menu" class="item">
+                <center>
+                    <img src="Hamburger_icon.svg" id="menuIcon" onclick="menubutton();" onmouseenter="entermouseMenu();" onmouseleave="leavemouseMenu();" />
+                </center>
+            </div>
+
+
+            <!-- 타이틀-->
+            <div id="title" class="item">
+                <center>
+                    <h3>
+                        <a href="index.html">
+
+                            GGANADA's StudyLog
+                        </a>
+                    </h3>
+                </center>
+            </div>
+
+            <!-- 프로필-->
+            <div id="profile" class="item">
+                <center>
+                    <img src="https://avatars.githubusercontent.com/u/31785989?v=4" id="profileImage" class="item" />
+                </center>
+            </div>
+
+
+
         </div>
+        <!--메인부분-->
+        <div id="MainContainer">
 
-
-
-        <div id="title" class="item">
-            <center>
-                <h3>
-                    <a href="index.html">
-
-                        GGANADA's StudyLog
-                    </a>
-                </h3>
-            </center>
-        </div>
-
-        <div id="profile" class="item">
-            <center>
-                <img src="https://avatars.githubusercontent.com/u/31785989?v=4" id="profileImage"/>
-            </center>
         </div>
     </div>
 
+
+
+
+    <!-- 사이드바-->
+    <div id="sidebarContainer">
+        <center>
+            <img src="https://avatars.githubusercontent.com/u/31785989?v=4" id="menuImage" />
+        </center>
+
+
+    </div>
+
+
+   
+
+
+
+
+
+
+
+    <!-- 스크립트 부분-->
+    <script src="main.js">
+
+    </script>
 </body>
 </html>
