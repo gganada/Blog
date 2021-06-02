@@ -30,13 +30,13 @@ function menubutton() {
 
 function updateSidebar() {  
     if (onSidebar == 1) {
-      //  document.getElementById('sidebarContainer').style.webkitTransform = 'scale(1,1)';
+
         document.getElementById('sidebarContainer').style.left = '0px';
         document.getElementById('container').style.width = '70vw';
         document.getElementById('container').style.marginLeft = '30vw';
     }
     else {
-     //   document.getElementById('sidebarContainer').style.webkitTransform = 'scale(0,1)';
+
         document.getElementById('sidebarContainer').style.left = '-30vw';
         document.getElementById('container').style.width = '100vw';
         document.getElementById('container').style.marginLeft = '0vw';
