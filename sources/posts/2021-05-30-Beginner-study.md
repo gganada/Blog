@@ -1,12 +1,5 @@
----
-layout: post
-title: "Beginner Study"
-authors: [gganada]
-tags: ["Web"]
-image: assets/images/post-Beginner-study/main.gif
-description: "Web 비기너의 2달동안 성장과정"
-featured: false
----
+
+# Web 비기너의 2달동안 성장과정
 
 이 포스트에서는 웹린이가 두달간 학습하며 만들었던 간단한 웹페이지를 소개해드리고자 합니다.
 [NyanCat_Party](https://gganada.github.io/JH_WebStudy/)
@@ -27,7 +20,7 @@ featured: false
 메인 페이지의 배경화면이 투명해지고, 틱마다 배경의 고양이들의 크기와 배경색이 랜덤으로 바뀝니다.
 또, 좌측 고양이의 점프 속도가 빨라지며, 가운데 고양이가 회전합니다.
 
-[main.gif](../assets/images/post-Beginner-study/main.gif)
+[main.gif](../sources/img/post-Beginner-study/main.gif)
 
 `partytime()` 이벤트가 실행되면, 점프하는 고양이(`box`)의 애니메이션 시간이 짧아져, 점프 속도가 빨라집니다.
 메인 페이지(`sodyd`)의 배경색을 투명하게 만들어 뒤의 고양이 배경이 보이게 됩니다.
@@ -90,7 +83,7 @@ function randColor() {
 
 회전 고양이는 아래 GIF와 같이 고양이가 마우스를 보는 고양이입니다.
 
-[rotate.gif](../assets/images/post-Beginner-study/rotate.gif)
+[rotate.gif](../sources/img/post-Beginner-study/rotate.gif)
 
 고양이의 각도는 코사인법칙을 이용하여 구현하였는데, 각도를 구하는 코드는 다음과 같습니다.
 
@@ -104,7 +97,7 @@ function randColor() {
 마우스의 좌표를 `A`, 고양이의 좌표를 `B` 라고 할 때, 아래 그림과 같은 직각삼각형이 만들어집니다.
 고양이를 회전시켜야 하는 각을 `X` 라고 하면, 다음과 같은 식이 성립합니다.
 
-[tri.png](../assets/images/post-Beginner-study/tri.png)
+[tri.png](../sources/img/post-Beginner-study/tri.png)
 
 ```javascript
      rot = Math.acos((event.clientX - lef) / (Math.sqrt(Math.pow(event.clientX - lef, 2) + Math.pow(event.clientY - topp, 2))));

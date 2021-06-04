@@ -2,6 +2,7 @@
 
 var onSidebar = 0;
 var ismouseMenu;
+var ScrWidth;
 
 function entermouseMenu() {
     ismouseMenu = 1;
@@ -29,17 +30,26 @@ function menubutton() {
 }
 
 function updateSidebar() {  
+    ScrWidth = screen.width;
     if (onSidebar == 1) {
+        if (ScrWidth > 600) {
+          
+            document.getElementById('sidebarContainer').style.left = '0px';
+            document.getElementById('container').style.width = '70vw';
+            document.getElementById('container').style.marginLeft = '30vw';
+        }
+        else {
+            
+        }
 
-        document.getElementById('sidebarContainer').style.left = '0px';
-        document.getElementById('container').style.width = '70vw';
-        document.getElementById('container').style.marginLeft = '30vw';
     }
     else {
 
-        document.getElementById('sidebarContainer').style.left = '-30vw';
+        document.getElementById('sidebarContainer').style.left = '-130vw';
+
         document.getElementById('container').style.width = '100vw';
         document.getElementById('container').style.marginLeft = '0vw';
     }
 }
+
 
